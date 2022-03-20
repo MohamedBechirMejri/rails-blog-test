@@ -1,9 +1,7 @@
-<h1 class=" text-4xl font-bold ">Articles</h1>
-<ul>
+<h1 class="text-4xl font-bold">Articles</h1>
+<div class="flex flex-wrap gap-4 p-4">
   <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-    </li>
+    <%= link_to article.title, article, {:class => "font-semibold text-lg p-4 shadow border rounded hover:scale-105 transition-all"} %>
   <% end %>
-</ul>
-<%= link_to "New Article", new_article_path %>
+</div>
+<%= link_to "New Article", new_article_path, {:class => "bg-blue-500 text-white p-2 rounded hover:bg-blue-600 active:scale-95 transition-all"} %>
