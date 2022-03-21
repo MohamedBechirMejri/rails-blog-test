@@ -1,14 +1,12 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-<p>
-  <%= link_to "Destroy Comment", [comment.article, comment], data: {
+<div class="flex gap-2 items-center">
+  <p>
+    <strong><%= comment.commenter %>:</strong>
+    <%= comment.body %>
+  </p>
+  <p class="text-red-500 font-extrabold hover:scale-105 transition-all">
+    <%= link_to "X", [comment.article, comment], data: {
                 turbo_method: :delete,
                 turbo_confirm: "Are you sure?"
               } %>
-</p>
+  </p>
+</div>
