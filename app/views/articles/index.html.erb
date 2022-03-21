@@ -1,4 +1,9 @@
 <h1 class="text-4xl font-bold">Articles</h1>
+<p>
+  name: 'dhh'
+  <br/>
+  password: 'secret'
+</p>
 <div class="flex flex-wrap gap-4 p-4">
   <% @articles.each do |article| %>
     <%= link_to article.title, article, {:class => "font-semibold text-lg p-4 shadow border rounded hover:scale-105 transition-all"} %>
