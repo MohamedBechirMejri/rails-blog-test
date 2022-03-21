@@ -1,24 +1,5 @@
-# README
+# rails-blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+a very very simple blog app to learn rails as part of [theodinproject](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/ruby-on-rails-ruby-on-rails) curriculum. didn't focus on styling much :( .
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Demo](https://glacial-retreat-89703.herokuapp.com/)
