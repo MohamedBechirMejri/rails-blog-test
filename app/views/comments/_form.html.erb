@@ -1,13 +1,9 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class="p-4 flex flex-col items-center gap-2">
+    <%= form.text_field :commenter, placeholder: :commenter, class: 'rounded w-full' %>
+    <%= form.text_area :body, placeholder: :body, class: 'rounded w-full' %>
+    <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 active:scale-95 transition-all">
+      <%= form.submit %>
+    </button>
+  </div>
 <% end %>
